@@ -9,14 +9,14 @@
 </head>
 <body>
     <nav class="navigation">
-      <a href="#">Me</a>
-      <a href="#">Blog</a>
-      <a href="#">Work</a>
-      <a href="#">About</a>
+      <a href="#me">Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#exp">Experience</a>
     </nav>
 
 
-    <div class="first-part">
+    <div class="first-part" id="me">
 
         <div class="left">
         <img src="anime.png" class="photo">
@@ -24,11 +24,131 @@
 
         <div class="right">
           <h2>About Me</h2>
-          <span>Hi , I'm Kujtese Lahi<br>
+          <p>Hi , I'm Kujtese Lahi<br>
             I'm 21 years old and a Computer Sience student.<br>
             On my free time I like to watch anime and eat chinese food.
-          </span>
+          </p>
         </div>
     </div>
+
+    <div class="skills-part" id="skills">
+
+      <h2>My Skills</h2>
+      <p style="margin-top:1%;">I have good skills in HTML,CSS, JavaScript<br>
+         and in some projects I have skilled pretty good in Java,and PHP. </p>
+        
+    </div>
+
+
+    <div class="logo-part">
+      <img src="html.png" class="logo">
+      <img src="css-256.png" class="logo">
+      <img src="js-128.png" class="logo">
+      <img src="php-128.png" class="logo">
+      <img src="kisspng-java-runtime-environment-computer-programming-comp-pattern-in-java-5b4463cc03ea79.8035751915312086520161.png" class="logo">
+
+      </div>
+
+      <div class="work-part" id="work">
+
+        <h2 class="texti">Some captures from my last work</h2>
+
+        <div class="mySlides fade">
+          <img src="pic1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="pic2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="pic3.jpg" style="width:100%">
+        </div>
+      
+      </div>
+
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+
+        <p class="p">
+          BeautyGlow is a simple cosmetic website.
+          It has sort and filrt function and it's responsive.
+        </p>
+      </div>
+
+
+
+      <div class="exp-part" id="exp">
+        <h2>Experience</h2>
+        <p style="margin-top:1%; margin-bottom:1%;">In college I have worked in many group projects. I have used CSS, HTML, JavaScript, PHP,Java and SQLServer. <br>
+          Also I just finished a Web Development training. For more check my GitHub profile!
+        </p>
+
+        <a href="https://github.com/KujteseLahi"><img src="github.png"  style="width:42px;height:42px;"></a>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); 
+        }
+        </script>
+        
+
   </body>
 </html>
