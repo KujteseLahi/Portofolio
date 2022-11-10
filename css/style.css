@@ -45,7 +45,6 @@ body {
     flex-direction: row;
     margin-top: 10%;
     justify-content: center;
-    
 }
 
 .photo{
@@ -60,6 +59,7 @@ body {
   display: flex;
   box-sizing: border-box;
 
+
 }
 
 .right{
@@ -68,6 +68,9 @@ body {
   text-align: center;
   margin-top: 10%;
   color: palevioletred;
+  animation-name: bckt;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
 
 }
 
@@ -78,6 +81,9 @@ body {
   flex-direction: column;
   color: palevioletred;
   margin-top: 11%;
+  animation-name: bckt;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
   
 }
 .logo{
@@ -107,6 +113,9 @@ body {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  animation-name: bckt;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
 }
 
 
@@ -118,6 +127,7 @@ body {
   bottom: 8px;
   width: 100%;
   text-align: center;
+  
 }
 
 
@@ -163,6 +173,9 @@ body {
   color: palevioletred;
   margin-top: 20%;
   height: 20vh;
+  animation-name: bckt;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
 }
 
 .texti{
@@ -170,6 +183,11 @@ body {
   color: palevioletred;
   text-align: center;
 }
+@keyframes bckt{
+  from{top:0px ; color:  #272727 ;}
+  to{top: 0px; color:palevioletred;}
+}
+
 
 
 
@@ -233,7 +251,8 @@ body {
     width: 10px;
   }
 
- 
+
+
   
 
   
